@@ -1,0 +1,139 @@
+*{
+    background-color:#ffdccc;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.content{
+    background-color: #fcb1a6;
+    padding: 1rem;
+    margin: 2rem 8rem;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.18);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.18);
+}
+
+.header{
+    text-align: center;
+    background-color: #5d2a42;
+    color: white;
+    padding: 1rem;
+    border: 4px;
+    border-radius: 10px;
+    margin: 2rem;
+    font-size: 2em; 
+}
+
+p{
+    background-color: #5d2a42;
+    color: white; 
+}
+
+.main-content{
+    border: 4px;
+    border-radius: 10px;
+    margin: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #fcb1a6;
+    padding: 1rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    background-color: #e986b4;
+    color: white;
+    border-radius: 100px;
+    text-decoration: none;
+    display: inline-flex;
+    transition: .3s ease all;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: #fcb1a6;
+}
+
+.menu li{
+    margin-right: 70px;
+}
+
+.menu a{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.menu a span{
+    transition: transform 0.2s ease-out;
+}
+
+.menu a span:first-child{
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu a span:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+}
+
+.menu i{
+    font-size: 30px;
+}
+
+.menu a:hover span:first-child{
+    transform: translateY(100%);
+}
+
+.menu a:hover span:first-child,
+.menu[data-animation] a:hover span:last-child{
+    transform: none;
+}
+
+.menu[data-animation="to-top"] a span:last-child{
+    transform: translateY(100%);
+}
+
+.menu[data-animation="to-top"] a:hover span:first-child{
+    transform: translateY(-100%);
+}
+
+.menu[data-animation="to-right"] a span:last-child{
+    transform: translateX(-100%);
+}
+
+.menu[data-animation="to-right"] a:hover span:first-child{
+    transform: translateX(100%);
+}
+
+.menu[data-animation="to-left"] a span:last-child{
+    transform: translateX(100%);
+}
+
+.menu[data-animation="to-left"] a:hover span:first-child{
+    transform: translateX(-100%);
+}
