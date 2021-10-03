@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viggenere</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/viggenere.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            Ejemplo de cifrado Viggenere
+        </div>
+        <div class="main-content">
+            <label>Introduzca el texto a cifrar</label><br>
+            <input type="text" id="mensaje" class="texto">
+            <br>
+            <label>Introduzca la clave de cifrado</label><br>
+            <input type="text" id="llave" class="texto">
+            <br>
+            <p><button id="cifrar" class="cifrar">Cifrar</button>&nbsp;&nbsp;
+            <button id="descifrar" class="descifrar">Descifrar</button>&nbsp;&nbsp;
+            <button id="borrar" class="borrar">Limpiar</button>
+            </p>
+            <br>
+            <label>El texto resultante es: </label> <br>
+            <input type="text" id="resultado" class="texto" readonly>
+            <br>
+            <a href="../01 Cesar/index.html">Cifrado Cesar</a>
+        </div>
+    </div>
+    <footer>Lopez Castillo Azurim Sua 5IV7</footer>
+    <script src="./js/viggenere.js"></script>
+</body>
+</html>
