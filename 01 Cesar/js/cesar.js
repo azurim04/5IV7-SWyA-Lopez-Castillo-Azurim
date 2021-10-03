@@ -2,7 +2,7 @@ var cesar = cesar || (function(){
     var proceso = function(txt, desp, action){
         var replace = (function(){
             var abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
-                        'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 
+                        'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 
                         'x', 'y', 'z'];
             var l = abc.length;
 
@@ -22,7 +22,7 @@ var cesar = cesar || (function(){
                 return c;
             };
         })();
-        var re = (/([a-z])/ig);
+        var re = (/([a-zñ])/ig);
         return String(txt).replace(re, function(match){
             return replace(match);
         });
@@ -39,11 +39,15 @@ var cesar = cesar || (function(){
 })();
 
 function cifrar(){
+    var desplazamiento = document.getElementById("desp").value;
+    desplazamiento %= 27
     document.getElementById("resultado").innerHTML =
-    cesar.encode(document.getElementById("cadena").value, 3);
+    cesar.encode(document.getElementById("cadena").value, desplazamiento);
 }
 
 function descifrar(){
+    var desplazamiento = document.getElementById("desp").value;
+    desplazamiento %= 27
     document.getElementById("resultado").innerHTML =
-    cesar.decode(document.getElementById("cadena").value, 3);
+    cesar.decode(document.getElementById("cadena").value, desplazamiento);
 }

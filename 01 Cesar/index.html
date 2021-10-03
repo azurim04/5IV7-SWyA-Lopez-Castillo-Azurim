@@ -8,16 +8,28 @@
     <link rel="stylesheet" href="css/cesar.css">
 </head>
 <body>
-    Este es un ejemplo para poder cifrar un texto con el algoritmo de cesar
-    <br>
-    <textarea id="cadena" cols="30" rows="10"></textarea>
-    <br>
-    <p><input type="button" value="Cifrar" onclick="cifrar()">
-        <input type="button" value="Descifrar" onclick="descifrar()"></p>
-    <div id="resultado">
-
+    <div class="content">
+        <div class="header">
+            Ejemplo de cifrado Cesar
+        </div>
+        <div class="main-content">
+            <label>Introduzca el texto a cifrar</label><br>
+            <textarea id="cadena" cols="30" rows="10" class="texto"></textarea>
+            <br>
+            <label>Introduzca el dezplazamiento</label><br>
+            <input type="number" id="desp" class="number">
+            <br>
+            <p><input class="cifrar" type="button" value="Cifrar" onclick="cifrar()">
+            <input class="descifrar" type="button" value="Descifrar" onclick="descifrar()"></p>
+            <br>
+            <label>El texto resultante es:</label>
+            <div id="resultado">
+            </div>
+            <br>
+            <a href="../02 Viggenere/index.html">Cifrado Viggenere</a>
+        </div>
     </div>
-
-    <script src="js/cesar.js"></script>
+    <footer>Lopez Castillo Azurim Sua 5IV7</footer>
+    <script src="./js/cesar.js"></script>
 </body>
 </html>
