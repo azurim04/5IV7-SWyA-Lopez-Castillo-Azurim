@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+* {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(4, 33, 95);
+    background-image: url("https://images.unsplash.com/photo-1494256997604-768d1f608cac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=929&q=80");
+    background-size: cover;
+}
+
+.alinear {
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+}
+
+form {
+    color: #000000;
+    background: #d5dcf959;
+    backdrop-filter: blur(6px);
+    width: 95%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px 0px 10px 0px;
+}
+
+input {
+    padding: 15px 0px;
+    background-color: #86b5d4;
+    border-radius: 10px;
+    margin: 20px 10px;
+    width: 90%;
+    max-width: 450px;
+    border: 1px solid #86b5d4;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+input:hover {
+    background-color: #a1d9ff;
+    border: 1px solid #a1d9ff;
+}
+
+
+/*
+#adc178
+#dbb42c
+#6f1d1b
+#abc4ab
+#ffffb3
+#f78764
+#684756
+#e7ac94
+#d5dcf9
+#f8ebcd
+#fe5f55
+#b68089
+#70abaf
+*/
+
+article {
+    margin: 15px auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.file {
+    font-size: 18px;
+    background-color: rgb(142, 211, 188);
+    border: 1px solid rgb(142, 211, 188);
+    color: #000000;
+    cursor: pointer;
+    padding: 15px 10px;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.file:hover {
+    background-color: rgb(174, 255, 228);
+    border: 1px solid rgb(174, 255, 228);
+}
